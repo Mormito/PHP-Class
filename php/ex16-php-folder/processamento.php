@@ -9,12 +9,15 @@
 
 
 <?php
-    $valor = $_GET['valor'];
-    $antecessor =  $valor-1;
-    $sucessor = $valor+1;
+    $n1 = $_GET['n1'];
+    $n2 = $_GET['n2'];
+
+    if ($n1 > $n2){
+        echo "$n1 é maior que $n2";
+    } else {
+        echo "$n2 é maior que $n1";
+    }
     
-    echo "Valor = $valor <br>";
-    echo "Sucessor = $sucessor <br>";
 ?>
 
 </body>

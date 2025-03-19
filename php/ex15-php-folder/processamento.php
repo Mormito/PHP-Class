@@ -9,12 +9,16 @@
 
 
 <?php
-    $valor = $_GET['valor'];
-    $antecessor =  $valor-1;
-    $sucessor = $valor+1;
+    $n1 = $_GET['n1'];
+
+    if ($n1 > 0){
+        echo "Valor é positivo!";
+    } elseif ($n1 < 0) {
+        echo "Valor é negativo!";
+    } else {
+        echo "Valor é igual a zero";
+    }
     
-    echo "Valor = $valor <br>";
-    echo "Sucessor = $sucessor <br>";
 ?>
 
 </body>

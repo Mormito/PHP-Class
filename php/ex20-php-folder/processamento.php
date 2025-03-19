@@ -7,14 +7,16 @@
 </head>
 <body>
 
-
 <?php
-    $valor = $_GET['valor'];
-    $antecessor =  $valor-1;
-    $sucessor = $valor+1;
+    $n1 = $_GET['n1'];
+    $n2 = $_GET['n2'];
+    $n3 = $_GET['n3'];
+    $n4 = $_GET['n4'];
+
+    $media_aritimetica = ($n1+$n2+$n3+$n4)/4;
+
+    echo $media_aritimetica >= 6 ? "APROVADO!" : "REPROVADO!"
     
-    echo "Valor = $valor <br>";
-    echo "Sucessor = $sucessor <br>";
 ?>
 
 </body>

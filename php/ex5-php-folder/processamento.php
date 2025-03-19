@@ -15,7 +15,6 @@
     
     echo "Antecessor = $antecessor <br>";
     echo "Valor = $valor <br>";
-    echo "Sucessor = $sucessor <br>";
 ?>
 
 </body>

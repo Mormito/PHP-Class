@@ -9,12 +9,13 @@
 
 
 <?php
-    $valor = $_GET['valor'];
-    $antecessor =  $valor-1;
-    $sucessor = $valor+1;
-    
-    echo "Valor = $valor <br>";
-    echo "Sucessor = $sucessor <br>";
+    $n1 = $_GET['n1'];
+
+    if ($n1 > 0) {
+        echo "Numero é positivo";
+    }
+
+    # echo $n1 > 0 ? "Numero é positivo" : ""
 ?>
 
 </body>
