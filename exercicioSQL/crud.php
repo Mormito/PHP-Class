@@ -36,13 +36,13 @@
             return $statement->execute();
         }    
 
-        //function removeRegistro($conexao, $codigo)
-        //{
-        //    $SQL = "DELETE FROM produtos WHERE codigo = :codigo";
-        //    $statement = $conexao->prepare($SQL);
-        //    $statement->bindValue(':codigo', $codigo);
-        //    return $statement->execute();
-        //}    
+        function removeRegistro($conexao, $codigo)
+        {
+            $SQL = "DELETE FROM produtos WHERE codigo = :codigo";
+            $statement = $conexao->prepare($SQL);
+            $statement->bindValue(':codigo', $codigo);
+            return $statement->execute();
+        }    
         
         // $retorno = insereRegistro($conexao, "Pepsi", "3 litros", "10", "9.52");
         // if ($retorno) {
